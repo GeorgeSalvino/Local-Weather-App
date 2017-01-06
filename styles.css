@@ -1,0 +1,59 @@
+.jumbotron{
+	max-width:900px;
+	max-height:330px;
+	background: rgba(0,0,0,.7) !important;
+	text-align:center;
+  color:white !important;
+  margin-top:120px;
+  margin-left:auto;
+  margin-right:auto
+}
+
+body,html{
+	height:100%;
+	color:white;
+  	background-size:cover
+}
+
+#shiverz{
+  font-family: 'Raleway', sans-serif;
+  font-size:70px !important;
+}
+
+#unit{
+  color:red
+}
+
+#unit:hover{
+  cursor: pointer;
+}
+
+.Thunderstorm{
+	background:url("http://unsplash.com/photos/2uOcrLACf_4/download?force=true");
+	background-size:cover 
+}
+
+.Rain{
+	background:url("http://unsplash.com/photos/VR0s3Yqm2RA/download?force=true");
+	background-size:cover
+}
+
+.Snow{
+	background:url("http://unsplash.com/photos/3giJk_nL8VA/download?force=true");
+	background-size:cover
+}
+
+.Clear{
+	background:url("http://unsplash.com/photos/ocwmWiNAWGs/download?force=true");
+	background-size:cover
+}
+
+.Clouds{
+	background:url("http://unsplash.com/photos/n4PSXU-dCTQ/download?force=true");
+	background-size:cover
+}
+
+.Mist{
+  background:url("http://unsplash.com/photos/TFyi0QOx08c/download?force=true");
+  background-size:cover
+}
