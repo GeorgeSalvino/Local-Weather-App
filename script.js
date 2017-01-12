@@ -2,15 +2,16 @@
 function getWeather(pos) {
 	$.ajax( {
         //get current position
-	      url: "http://ip-api.com/json",
+	      url: "https://freegeoip.net/json/",
+        dataType:"jsonp",
 	      success: function(data) {
         //store coordinates in variables
-			  var lat 	=	  data.lat;
-			  var lon 	= 	data.lon;
+			  var lat 	=	  data.latitude;
+			  var lon 	= 	data.longitude;
         var city  =   data.city;
         //get weather
 			  $.ajax( {
-	      url: 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&APPID=f6e93916dc3b4a9c1b77dafabc91290a&units=metric',
+	      url: 'https://cors.now.sh/http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&APPID=f6e93916dc3b4a9c1b77dafabc91290a&units=metric',
 	      success: function(data) {
           //store weather data in variables
 	        var temp      = Math.round(Number(data.main.temp));
